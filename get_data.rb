@@ -16,7 +16,7 @@
   https.use_ssl = true
 
   request = Net::HTTP::Get.new(url)
-  request["Bptoken"] = "17fc03afaae4368bcffe9f4b6943756a"
+  request["Bptoken"] = "" # Add your key here
   form_data = []
   request.set_form form_data, 'multipart/form-data'
   response = https.request(request)
